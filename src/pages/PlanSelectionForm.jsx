@@ -1,10 +1,10 @@
-// 📂 PlanSelectionForm.jsx - Updated with Correct Backend URL for Vercel Deployment
+// 📂 PlanSelectionForm.jsx - Fixed API URL for Vercel Deployment
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './PlanSelectionForm.css';
 
 export default function PlanSelectionForm() {
-  const API_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+  const API_URL = process.env.REACT_APP_BACKEND_URL?.trim() || 'https://backend-repo-v63w.onrender.com';
   const { plan } = useParams();
   const [formData, setFormData] = useState({
     firstName: '',
@@ -31,6 +31,8 @@ export default function PlanSelectionForm() {
     Object.keys(formData).forEach((key) => {
       formDataToSend.append(key, formData[key]);
     });
+
+    console.log('Submitting to:', `${API_URL}/api/customers`);
 
     try {
       const response = await fetch(`${API_URL}/api/customers`, {
