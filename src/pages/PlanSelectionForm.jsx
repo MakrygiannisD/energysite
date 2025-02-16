@@ -35,7 +35,7 @@ export default function PlanSelectionForm() {
     });
 
     try {
-      const response = await fetch('API_URL:5000/api/customers', {
+      const response = await fetch(`${API_URL}/api/customers`, {
         method: 'POST',
         body: formDataToSend,
       });
