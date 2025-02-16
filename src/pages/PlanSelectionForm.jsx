@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './PlanSelectionForm.css';
 
+
 export default function PlanSelectionForm() {
+
+  const API_URL = process.env.REACT_APP_BACKEND_URL;
   const { plan } = useParams();
   const [formData, setFormData] = useState({
     firstName: '',
@@ -32,7 +35,7 @@ export default function PlanSelectionForm() {
     });
 
     try {
-      const response = await fetch('http://localhost:5000/api/customers', {
+      const response = await fetch('API_URL:5000/api/customers', {
         method: 'POST',
         body: formDataToSend,
       });
