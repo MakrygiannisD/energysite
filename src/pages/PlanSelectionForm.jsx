@@ -1,12 +1,10 @@
-// 📂 PlanSelectionForm.jsx - Added Invoice Upload Field
+// 📂 PlanSelectionForm.jsx - Updated with Correct Backend URL for Vercel Deployment
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './PlanSelectionForm.css';
 
-
 export default function PlanSelectionForm() {
-
-  const API_URL = process.env.REACT_APP_BACKEND_URL;
+  const API_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
   const { plan } = useParams();
   const [formData, setFormData] = useState({
     firstName: '',
