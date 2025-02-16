@@ -1,0 +1,70 @@
+/* 📂 TermsOfUse.css - Styling for the Terms of Use Page */
+
+.terms-page {
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-page h1, .terms-page h2 {
+    color: #00796b;
+    margin-bottom: 15px;
+  }
+  
+  .terms-page section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .terms-page ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .terms-page ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .terms-page footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .terms-page a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .terms-page a:hover {
+    color: #004d40;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .terms-page {
+      padding: 30px 15px;
+    }
+    .terms-page h1 {
+      font-size: 1.8rem;
+    }
+    .terms-page h2 {
+      font-size: 1.4rem;
+    }
+  }
+  

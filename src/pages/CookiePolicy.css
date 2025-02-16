@@ -1,0 +1,72 @@
+/* 📂 CookiePolicy.css - Styling for the Cookie Policy Page */
+
+.cookie-page {
+    padding: 50px 30px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    max-width: 850px;
+    margin: 40px auto;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cookie-page h1, .cookie-page h2 {
+    color: #00796b;
+    margin-bottom: 15px;
+  }
+  
+  .cookie-page section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .cookie-page ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .cookie-page ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .cookie-page p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .cookie-page strong {
+    color: #004d40;
+    font-weight: bold;
+  }
+  
+  /* Footer Styling */
+  .cookie-page footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cookie-page {
+      padding: 30px 15px;
+    }
+    .cookie-page h1 {
+      font-size: 1.8rem;
+    }
+    .cookie-page h2 {
+      font-size: 1.4rem;
+    }
+    .cookie-page p, .cookie-page ul li {
+      font-size: 1rem;
+    }
+  }
+  

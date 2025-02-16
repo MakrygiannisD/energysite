@@ -1,0 +1,35 @@
+/* 📂 PlanSelectionForm.css */
+.plan-form-page {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #1e1e2f;
+  }
+  
+  .plan-form input, .plan-form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    font-size: 1rem;
+    color: white;
+    background-color: #333;
+  }
+  
+  .plan-form button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00796b;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .plan-form button:hover {
+    background-color: #005a4f;
+  }
+  
